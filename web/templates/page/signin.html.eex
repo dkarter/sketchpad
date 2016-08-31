@@ -1,0 +1,6 @@
+<div class="row">
+  <%= form_for @conn, page_path(@conn, :signin), [as: :user], fn f -> %>
+    <%= text_input f, :username, placeholder: "name...", class: "form-control" %>
+    <button type="submit" class="btn btn-primary">Sketch!</button>
+  <% end %>
+</div>
